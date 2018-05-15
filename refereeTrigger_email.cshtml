@@ -1,0 +1,205 @@
+﻿<!DOCTYPE html>
+@{ 
+    var date = "4th April 2018";
+    var receiverName = "Wasif Mahamod";
+    var customerName = "John Ahern";
+    var sender = "Fiona Crawford";
+    var senderRole = "HR - Manager Infotrack";
+
+}
+<html>
+<head>
+    <title>Infotrack HTML Template</title>
+    <!-- <link rel="stylesheet" type="text/css" href="style/style.css">  -->
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type="text/css">
+
+        @string.Format("@")import url("https://fonts.googleapis.com/css?family=Lato");
+
+        body{
+            font-family: Lato;
+            font-style: normal;
+            font-weight: 100;
+        }
+
+        .email-wrapper {
+            width: 100%;
+            background-color: #F5F6F7;
+            max-width: 670px;
+            min-width: 400px;
+            margin: 0 auto;
+        }
+
+        .top-gradient {
+            background: linear-gradient(#62A8BB,#336F85);
+        }
+
+        .email-content {
+            background-color: #fff;
+            margin:25px 25px 25px 25px;
+            font-size: 15px;
+
+        }
+
+        .email-content-text {
+            padding: 5px 10px 5px 10px;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.062), 0 1px 2px rgba(0, 0, 0, 0.007);
+
+        }
+
+        p.email-text {
+            color: rgb(80, 78, 78);
+        }
+
+        a {
+            color: #6192A3;
+        }
+
+        .header {
+            color: #fff;
+            margin-left: 5%;
+            margin-right: 5%;
+            padding-bottom: 15px;
+        }
+
+        .header p {
+            float: left;
+        }
+
+        p.bold {
+            font-weight: bold;
+            color: rgb(71, 69, 69);
+        }
+
+        p.under-thankyou{
+            float: none;
+            font-size: 14px;
+        }
+
+        p.date {
+            font-size: 12px;
+        }
+
+        .logo img{
+            max-width: 60px;
+            float: right;
+            padding-top: 10px;
+        }
+
+        p.copyright-text {
+            text-align: center;
+            padding-bottom: 25px;
+            font-size: 10px;
+        }
+
+        .social {
+            text-align: center;
+
+        }
+
+        .social-icons {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+
+        }
+
+        .social-icons li {
+            display: inline-block;
+        }
+
+        .social-icons li img {
+            width: 100%;
+            max-width: 20px;
+
+        }
+
+        h2.thank-you{
+            padding: 0 0 0 0 ;
+            position: relative;
+            left:-78px;
+            top: 11px;
+            font-family: Lato Black;
+            font-size: 24px;
+        }
+
+
+        .link-btn {
+            display: inline-block;
+            background-color:#0696b7 ;
+            color: #fff;
+            border: 1px solid #0696b7;
+            border-radius: 4px;
+            padding: 10px 5px;
+            margin: 5px;
+            text-align: center;
+            cursor: pointer;
+            width: 150px;
+            text-decoration: none;
+        }
+
+        .link-btn-primary {
+            background-color: #fff;
+            color: #0696b7;
+        }
+
+    </style>
+
+</head>
+<body>
+    <div class="email-wrapper">
+        <div class="top-gradient">
+            <div class="header">
+                <p class="date">@date</p>
+                <div class="logo">
+                    <a href="http://infotrack.com"><img src="../Assets/CheckIT logo.png"></a>
+                </div> <!-- end of logo -->
+                <div class="thank-you-text">
+                    <br>
+                    <h2 class="thank-you">Hi @receiverName,</h2>
+                    <p class="under-thankyou">@customerName has nominated you to be a referee</p>
+                </div> <!-- end of thank-you-text -->
+            </div> <!-- end of header -->
+        </div> <!-- end of top-gradient -->
+        <div class="email-content">
+            <div class="email-content-text">
+                <p class="bold">
+                    Thank you for being a referee for @customerName.
+                </p>
+                <p class="email-text">
+                    Please select "Yes Please" to complete a quick 5 minute survey.
+                </p>
+                <div class="buttons">
+                    <a href="#" class="link-btn">Yes Please</a>
+                    <a href="#" class="link-btn link-btn-primary">No Thanks</a>
+                </div> <!-- end of buttons-->
+                <p class="email-text">
+                    Kind Regards, <br><br> @sender
+                    <br>@senderRole
+
+                </p>
+            </div> <!-- end of email-content-text -->
+        </div> <!-- end of email-content -->
+        <div class="email-footer">
+            <!-- <div class="social">
+                <ul class="social-icons">
+                    <li><a href="https://www.facebook.com/wasifleonhartphotography/"><img src="../Assets/facebook.png"></a></li>
+                    <li><a href="https://www.instagram.com/pixalynx/"><img src="../Assets/instagram.png"></a></li>
+                    <li><a href="#"><img src="../Assets/twitter.png"></a></li>
+                    <li><a href="https://www.youtube.com/user/Pixalynx"><img src="../Assets/youtube.png"></a></li>
+                </ul>
+            </div> <!-- end of social -->
+            <div class="copyright">
+                <p class="copyright-text">
+                    2018 InfoTract. All rights reserved. | ABN 36 092724 251 <br><br>
+                    Privacy Policey. Terms & Conditions
+                </p>
+
+            </div> <!-- end of copyright -->
+        </div> <!-- end of email-footer -->
+    </div> <!-- end of email-wrapper -->
+</body>
+
+</html>
